@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	--background: #ffffff;
+	--foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #0a0a0a;
+		--foreground: #ededed;
+	}
+}
+
+body {
+	color: var(--foreground);
+	background: var(--background);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-text {
+	font-family: "MyFont", sans-serif;
+	color: #ac2023;
+	-webkit-text-stroke: 0.25px white;
+	text-stroke: 0.25px white;
+	-webkit-text-fill-color: #ac2023;
+	font-weight: 900;
+	font-size: 1.3rem;
+	/* text-shadow: 0 0.5px #ac2023, 0.5px 0 #ac2023; */
+}
